@@ -28,19 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
+            button1 = new Button();
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(525, 661);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 46);
+            button1.TabIndex = 0;
+            button1.Text = "Start Game";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.LightCoral;
+            label1.ForeColor = Color.Transparent;
+            label1.Location = new Point(363, 356);
+            label1.Name = "label1";
+            label1.Size = new Size(500, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Click the Start Game Button to start the game";
+            label1.Click += label1_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1339, 1057);
+            BackColor = Color.LightCoral;
+            ClientSize = new Size(1243, 840);
+            Controls.Add(label1);
+            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button button1;
+        private Label label1;
     }
 }
