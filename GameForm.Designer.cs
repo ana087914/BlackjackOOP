@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< Updated upstream
+
             SuspendLayout();
             // 
-=======
+
             splitContainer1 = new SplitContainer();
             textBox1 = new TextBox();
             button2 = new Button();
@@ -148,7 +148,7 @@
             textBox2.Text = "BlackJack";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
->>>>>>> Stashed changes
+
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -156,21 +156,20 @@
             ClientSize = new Size(1166, 754);
             Name = "GameForm";
             Text = "GameForm";
-<<<<<<< Updated upstream
-=======
+
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
->>>>>>> Stashed changes
+
             ResumeLayout(false);
         }
 
         #endregion
-<<<<<<< Updated upstream
-=======
+
+
 
         private SplitContainer splitContainer1;
         private Button button2;
@@ -181,6 +180,6 @@
         private Button button3;
         private TextBox textBox1;
         private TextBox textBox2;
->>>>>>> Stashed changes
+
     }
 }
