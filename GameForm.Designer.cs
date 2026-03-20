@@ -28,8 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< Updated upstream
             SuspendLayout();
             // 
+=======
+            splitContainer1 = new SplitContainer();
+            textBox1 = new TextBox();
+            button2 = new Button();
+            button1 = new Button();
+            button6 = new Button();
+            button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            textBox2 = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // splitContainer1
+            // 
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            splitContainer1.Panel1.Controls.Add(textBox2);
+            splitContainer1.Panel1.Controls.Add(button2);
+            splitContainer1.Panel1.Controls.Add(button1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(textBox1);
+            splitContainer1.Panel2.Controls.Add(button6);
+            splitContainer1.Panel2.Controls.Add(button5);
+            splitContainer1.Panel2.Controls.Add(button4);
+            splitContainer1.Panel2.Controls.Add(button3);
+            splitContainer1.Size = new Size(1166, 754);
+            splitContainer1.SplitterDistance = 494;
+            splitContainer1.TabIndex = 0;
+            splitContainer1.SplitterMoved += splitContainer1_SplitterMoved;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(61, 12);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(554, 39);
+            textBox1.TabIndex = 2;
+            textBox1.Text = "BlackJack";
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // button2
+            // 
+            button2.ForeColor = Color.DarkOliveGreen;
+            button2.Location = new Point(31, 625);
+            button2.Name = "button2";
+            button2.Size = new Size(150, 46);
+            button2.TabIndex = 1;
+            button2.Text = "Hit";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.ForeColor = Color.IndianRed;
+            button1.Location = new Point(269, 625);
+            button1.Name = "button1";
+            button1.RightToLeft = RightToLeft.Yes;
+            button1.Size = new Size(150, 46);
+            button1.TabIndex = 0;
+            button1.Text = "Stand";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(497, 466);
+            button6.Name = "button6";
+            button6.Size = new Size(150, 46);
+            button6.TabIndex = 5;
+            button6.Text = "Exit";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(497, 386);
+            button5.Name = "button5";
+            button5.Size = new Size(150, 46);
+            button5.TabIndex = 4;
+            button5.Text = "Tutorial";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(497, 310);
+            button4.Name = "button4";
+            button4.Size = new Size(150, 46);
+            button4.TabIndex = 3;
+            button4.Text = "Shuffle";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(497, 225);
+            button3.Name = "button3";
+            button3.Size = new Size(150, 46);
+            button3.TabIndex = 2;
+            button3.Text = "New Round";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(-16, 12);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(507, 39);
+            textBox2.TabIndex = 6;
+            textBox2.Text = "BlackJack";
+            textBox2.TextAlign = HorizontalAlignment.Center;
+            // 
+>>>>>>> Stashed changes
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -37,9 +156,31 @@
             ClientSize = new Size(1166, 754);
             Name = "GameForm";
             Text = "GameForm";
+<<<<<<< Updated upstream
+=======
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel1.PerformLayout();
+            splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+>>>>>>> Stashed changes
             ResumeLayout(false);
         }
 
         #endregion
+<<<<<<< Updated upstream
+=======
+
+        private SplitContainer splitContainer1;
+        private Button button2;
+        private Button button1;
+        private Button button6;
+        private Button button5;
+        private Button button4;
+        private Button button3;
+        private TextBox textBox1;
+        private TextBox textBox2;
+>>>>>>> Stashed changes
     }
 }
