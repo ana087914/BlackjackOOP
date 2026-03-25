@@ -69,7 +69,6 @@
             splitContainer1.Size = new Size(1166, 754);
             splitContainer1.SplitterDistance = 494;
             splitContainer1.TabIndex = 0;
-            splitContainer1.SplitterMoved += splitContainer1_SplitterMoved;
             // 
             // textBox1
             // 
@@ -79,7 +78,6 @@
             textBox1.TabIndex = 2;
             textBox1.Text = "BlackJack";
             textBox1.TextAlign = HorizontalAlignment.Center;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button2
             // 
@@ -119,7 +117,6 @@
             button5.TabIndex = 4;
             button5.Text = "Tutorial";
             button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
             // 
             // button4
             // 
