@@ -29,23 +29,21 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
-<<<<<<< Updated upstream
-=======
+
             textBox2 = new TextBox();
             button2 = new Button();
             button1 = new Button();
             textBox1 = new TextBox();
->>>>>>> Stashed changes
+
             button6 = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-<<<<<<< Updated upstream
+
             button2 = new Button();
             button1 = new Button();
             textBox1 = new TextBox();
-=======
->>>>>>> Stashed changes
+
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -73,10 +71,8 @@
             splitContainer1.Size = new Size(1166, 754);
             splitContainer1.SplitterDistance = 494;
             splitContainer1.TabIndex = 0;
-            splitContainer1.SplitterMoved += splitContainer1_SplitterMoved;
             // 
-<<<<<<< Updated upstream
-=======
+
             // textBox2
             // 
             textBox2.Location = new Point(-16, 12);
@@ -115,9 +111,8 @@
             textBox1.TabIndex = 2;
             textBox1.Text = "BlackJack";
             textBox1.TextAlign = HorizontalAlignment.Center;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
->>>>>>> Stashed changes
+
             // button6
             // 
             button6.Location = new Point(497, 466);
@@ -135,7 +130,6 @@
             button5.TabIndex = 4;
             button5.Text = "Tutorial";
             button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -155,7 +149,6 @@
             button3.Text = "New Round";
             button3.UseVisualStyleBackColor = true;
             // 
-<<<<<<< Updated upstream
             // button2
             // 
             button2.ForeColor = Color.DarkOliveGreen;
@@ -185,21 +178,19 @@
             textBox1.TabIndex = 2;
             textBox1.Text = "BlackJack";
             textBox1.TextAlign = HorizontalAlignment.Center;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
-=======
->>>>>>> Stashed changes
+
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< Updated upstream
+
             BackColor = Color.DarkSeaGreen;
             ClientSize = new Size(1166, 754);
             Controls.Add(splitContainer1);
-=======
+
             ClientSize = new Size(1166, 787);
->>>>>>> Stashed changes
+
             Name = "GameForm";
             Text = "GameForm";
             splitContainer1.Panel1.ResumeLayout(false);
@@ -228,6 +219,7 @@
         #endregion
 
         private SplitContainer splitContainer1;
+        private TextBox textBox2;
         private Button button2;
         private Button button1;
         private Button button6;
