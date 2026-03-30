@@ -29,20 +29,26 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             textBox2 = new TextBox();
             button2 = new Button();
             button1 = new Button();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
             textBox1 = new TextBox();
             button6 = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -54,6 +60,7 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.BackColor = Color.RosyBrown;
+            splitContainer1.Panel1.Controls.Add(pictureBox2);
             splitContainer1.Panel1.Controls.Add(pictureBox1);
             splitContainer1.Panel1.Controls.Add(textBox2);
             splitContainer1.Panel1.Controls.Add(button2);
@@ -62,6 +69,8 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = Color.RosyBrown;
+            splitContainer1.Panel2.Controls.Add(pictureBox4);
+            splitContainer1.Panel2.Controls.Add(pictureBox3);
             splitContainer1.Panel2.Controls.Add(textBox1);
             splitContainer1.Panel2.Controls.Add(button6);
             splitContainer1.Panel2.Controls.Add(button5);
@@ -71,6 +80,27 @@
             splitContainer1.SplitterDistance = 490;
             splitContainer1.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.Location = new Point(248, 386);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(198, 228);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 7;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Location = new Point(12, 386);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(198, 228);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // textBox2
             // 
             textBox2.BackColor = Color.Snow;
@@ -78,8 +108,9 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(507, 39);
             textBox2.TabIndex = 6;
-            textBox2.Text = "BlackJack";
+            textBox2.Text = "Player cards";
             textBox2.TextAlign = HorizontalAlignment.Center;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button2
             // 
@@ -102,6 +133,26 @@
             button1.Text = "Stand";
             button1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox4.Location = new Point(293, 101);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(198, 228);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 9;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox3.Location = new Point(34, 101);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(198, 228);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 8;
+            pictureBox3.TabStop = false;
+            // 
             // textBox1
             // 
             textBox1.BackColor = Color.Snow;
@@ -109,7 +160,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(554, 39);
             textBox1.TabIndex = 2;
-            textBox1.Text = "BlackJack";
+            textBox1.Text = "Dealer cards";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // button6
@@ -148,17 +199,6 @@
             button3.Text = "New Round";
             button3.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(151, 332);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(200, 100);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -174,7 +214,10 @@
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -192,5 +235,8 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
     }
 }
