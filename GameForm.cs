@@ -96,6 +96,56 @@ using System.Windows.Forms;
             textBox2.Text = "Player: " + playerHand.GetValue().ToString();
             textBox1.Text = "Dealer: " + dealerHand.GetValue().ToString();
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            playerHand.AddCard(shoe.DealCard());
+            UpdateUI();
+
+            if (playerHand.IsBust())
+            {
+                MessageBox.Show("Player bust! Dealer wins.");
+            }
+        }
+        private void ShowResult()
+        {
+            int playerValue = playerHand.GetValue();
+            int dealerValue = dealerHand.GetValue();
+
+            if (playerHand.IsBust())
+            {
+                MessageBox.Show("Player loses.");
+            }
+            else if (dealerHand.IsBust())
+            {
+                MessageBox.Show("Dealer bust! Player wins.");
+            }
+            else if (playerValue > dealerValue)
+            {
+                MessageBox.Show("Player wins.");
+            }
+            else if (dealerValue > playerValue)
+            {
+                MessageBox.Show("Dealer wins.");
+            }
+            else
+            {
+                MessageBox.Show("Draw.");
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            while (dealerHand.GetValue() < 17)
+            {
+                dealerHand.AddCard(shoe.DealCard());
+            }
+
+            UpdateUI();
+            ShowResult();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StartNewRound();
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
