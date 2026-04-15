@@ -59,6 +59,9 @@ using System.Windows.Forms;
                 shoe = new Shoe(2);
             }
 
+            button1.Enabled = true;
+            button2.Enabled = true;
+
             playerHand.Clear();
             dealerHand.Clear();
 
@@ -72,7 +75,13 @@ using System.Windows.Forms;
             if (playerHand.GetValue() == 21)
             {
                 MessageBox.Show("Blackjack! Player wins.");
+                EndRound();
             }
+        }
+        private void EndRound()
+        {
+            button1.Enabled = false; // Stand
+            button2.Enabled = false; // Hit
         }
         private void UpdateUI()
         {
@@ -80,6 +89,10 @@ using System.Windows.Forms;
             pictureBox2.Image = null;
             pictureBox3.Image = null;
             pictureBox4.Image = null;
+            pictureBox5.Image = null;
+            pictureBox6.Image = null;
+            pictureBox7.Image = null;
+            pictureBox8.Image = null;
 
             if (playerHand.Cards.Count > 0)
                 pictureBox1.Image = Image.FromFile(GetCardImagePath(playerHand.Cards[0]));
@@ -87,11 +100,23 @@ using System.Windows.Forms;
             if (playerHand.Cards.Count > 1)
                 pictureBox2.Image = Image.FromFile(GetCardImagePath(playerHand.Cards[1]));
 
+            if (playerHand.Cards.Count > 2)
+                pictureBox5.Image = Image.FromFile(GetCardImagePath(playerHand.Cards[2]));
+
+            if (playerHand.Cards.Count > 3)
+                pictureBox6.Image = Image.FromFile(GetCardImagePath(playerHand.Cards[3]));
+
             if (dealerHand.Cards.Count > 0)
                 pictureBox3.Image = Image.FromFile(GetCardImagePath(dealerHand.Cards[0]));
 
             if (dealerHand.Cards.Count > 1)
                 pictureBox4.Image = Image.FromFile(GetCardImagePath(dealerHand.Cards[1]));
+
+            if (dealerHand.Cards.Count > 2)
+                pictureBox7.Image = Image.FromFile(GetCardImagePath(dealerHand.Cards[2]));
+
+            if (dealerHand.Cards.Count > 3)
+                pictureBox8.Image = Image.FromFile(GetCardImagePath(dealerHand.Cards[3]));
 
             textBox2.Text = "Player: " + playerHand.GetValue().ToString();
             textBox1.Text = "Dealer: " + dealerHand.GetValue().ToString();
@@ -104,6 +129,7 @@ using System.Windows.Forms;
             if (playerHand.IsBust())
             {
                 MessageBox.Show("Player bust! Dealer wins.");
+                EndRound();
             }
         }
         private void ShowResult()
@@ -141,6 +167,7 @@ using System.Windows.Forms;
 
             UpdateUI();
             ShowResult();
+            EndRound();
         }
         private void button3_Click(object sender, EventArgs e)
         {

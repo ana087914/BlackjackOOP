@@ -41,6 +41,10 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -49,6 +53,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -60,6 +68,8 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.BackColor = Color.RosyBrown;
+            splitContainer1.Panel1.Controls.Add(pictureBox6);
+            splitContainer1.Panel1.Controls.Add(pictureBox5);
             splitContainer1.Panel1.Controls.Add(pictureBox2);
             splitContainer1.Panel1.Controls.Add(pictureBox1);
             splitContainer1.Panel1.Controls.Add(textBox2);
@@ -69,6 +79,8 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = Color.RosyBrown;
+            splitContainer1.Panel2.Controls.Add(pictureBox8);
+            splitContainer1.Panel2.Controls.Add(pictureBox7);
             splitContainer1.Panel2.Controls.Add(pictureBox4);
             splitContainer1.Panel2.Controls.Add(pictureBox3);
             splitContainer1.Panel2.Controls.Add(textBox1);
@@ -199,6 +211,46 @@
             button3.Text = "New Round";
             button3.UseVisualStyleBackColor = true;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox5.Location = new Point(12, 128);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(198, 228);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 8;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox6.Location = new Point(248, 128);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(198, 228);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 9;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox7.Location = new Point(43, 386);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(198, 228);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 10;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox8.Location = new Point(293, 386);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(198, 228);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 11;
+            pictureBox8.TabStop = false;
+            // 
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -218,6 +270,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
         }
 
@@ -238,5 +294,9 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox7;
     }
 }
