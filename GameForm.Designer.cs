@@ -29,11 +29,15 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            pictureBox6 = new PictureBox();
+            pictureBox5 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             textBox2 = new TextBox();
             button2 = new Button();
             button1 = new Button();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             textBox1 = new TextBox();
@@ -41,22 +45,20 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -79,6 +81,8 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = Color.RosyBrown;
+            splitContainer1.Panel2.Controls.Add(label2);
+            splitContainer1.Panel2.Controls.Add(label1);
             splitContainer1.Panel2.Controls.Add(pictureBox8);
             splitContainer1.Panel2.Controls.Add(pictureBox7);
             splitContainer1.Panel2.Controls.Add(pictureBox4);
@@ -91,6 +95,26 @@
             splitContainer1.Size = new Size(1157, 784);
             splitContainer1.SplitterDistance = 490;
             splitContainer1.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox6.Location = new Point(248, 128);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(198, 228);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 9;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox5.Location = new Point(12, 128);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(198, 228);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 8;
+            pictureBox5.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -131,8 +155,9 @@
             button2.Name = "button2";
             button2.Size = new Size(150, 46);
             button2.TabIndex = 1;
-            button2.Text = "Hit";
+            button2.Text = "Confirm Hit";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -142,8 +167,29 @@
             button1.RightToLeft = RightToLeft.Yes;
             button1.Size = new Size(150, 46);
             button1.TabIndex = 0;
-            button1.Text = "Stand";
+            button1.Text = "Confirm Stand";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox8.Location = new Point(293, 386);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(198, 228);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 11;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox7.Location = new Point(43, 386);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(198, 228);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 10;
+            pictureBox7.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -183,6 +229,7 @@
             button6.TabIndex = 5;
             button6.Text = "Exit";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -201,6 +248,7 @@
             button4.TabIndex = 3;
             button4.Text = "Shuffle";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -210,46 +258,25 @@
             button3.TabIndex = 2;
             button3.Text = "New Round";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
-            // pictureBox5
+            // label2
             // 
-            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox5.Location = new Point(12, 128);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(198, 228);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 8;
-            pictureBox5.TabStop = false;
+            label2.AutoSize = true;
+            label2.Location = new Point(366, 663);
+            label2.Name = "label2";
+            label2.Size = new Size(113, 32);
+            label2.TabIndex = 13;
+            label2.Text = "Penalty: 0";
             // 
-            // pictureBox6
+            // label1
             // 
-            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox6.Location = new Point(248, 128);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(198, 228);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 9;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox7.Location = new Point(43, 386);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(198, 228);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 10;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox8.Location = new Point(293, 386);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(198, 228);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 11;
-            pictureBox8.TabStop = false;
+            label1.AutoSize = true;
+            label1.Location = new Point(103, 663);
+            label1.Name = "label1";
+            label1.Size = new Size(111, 32);
+            label1.TabIndex = 12;
+            label1.Text = "Correct: 0";
             // 
             // GameForm
             // 
@@ -266,20 +293,18 @@
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-
 
         private SplitContainer splitContainer1;
         private Button button2;
@@ -298,5 +323,7 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
+        private Label label2;
+        private Label label1;
     }
 }
